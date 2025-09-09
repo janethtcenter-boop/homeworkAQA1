@@ -1,7 +1,9 @@
-public class lesson2
+package lesson2;
+
+public class homework2
     // 1. Создайте метод printThreeWords()
 {
-    public static void main ("Orange","Banana","Apple") {
+   public static void main ("Orange","Banana","Apple") {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
