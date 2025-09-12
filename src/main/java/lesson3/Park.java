@@ -4,7 +4,9 @@ public class Park {
     private int hours;
     public Park (int hours) {
         this.hours = hours;
-    }
+
+     }
+
     public class Attractions {
         private String kind;
         private int hours;
@@ -14,6 +16,18 @@ public class Park {
             this.kind = kind;
             this.hours = hours;
             this.price = price;
+        }
+
+        public String getKind() {
+            return kind;
+        }
+
+        public int getHours() {
+            return hours;
+        }
+
+        public int getPrice() {
+            return price;
         }
     }
 }

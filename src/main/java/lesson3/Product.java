@@ -25,5 +25,12 @@ public class Product {
                                 productsArray[3] = new Product("Kia", "Kia motors", "Korea", 2008, 44335, "late");
                                         productsArray[4] = new Product("Noli", "Noli", "Korea", 2007, 44337, "accepted");
     }
+
+    public Product[] getProductsArray() {
+        return productsArray;
+    }
 }
+
+
+
 
