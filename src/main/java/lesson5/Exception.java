@@ -21,9 +21,9 @@ public class Exception {
         }
     }
 
-    public class MyArrayDataException extends Throwable {
+    public static class MyArrayDataException extends Throwable {
         ArrayProcessor processor = new ArrayProcessor();
-        try {
+            try {
             String[][] validArray = {
                     {"1", "2", "3", "4"},
                     {"5", "6", "7", "8"},
@@ -56,17 +56,17 @@ public class Exception {
             } catch (MyArraySizeException ex) {
                 throw new RuntimeException(ex);
             }
-        } catch (MyArraySizeException e); {
+        } catch (MyArraySizeException e;) {
             System.err.println("Ошибка:" + e.getMessage());
         } catch (
-        myArrayDataException e); {
+        MyArrayDataException e;) {
             System.err.println("Ошибка:" + e.getMessage());
         }
-        class myArrayDataException extends java.lang.Exception {
-            private int row;
-            private int col;
+        static class MyArrayDataException extends java.lang.Exception {
+            private final int row;
+            private final int col;
 
-            public myArrayDataException(int row, int col, String message) {
+            public MyArrayDataException(int row, int col, String message) {
                 super(message);
                 this.row = row;
                 this.col = col;
@@ -82,9 +82,9 @@ public class Exception {
         }
     }
     public static void main(String[] args) {
-        int [] myArray = new int[4];
+        int [] myArray = new int[3];
         try {
-            int value = myArray [4];
+            int value = myArray [2];
             System.out.println("Значение:" + value);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println("Исключение: + e.getMessage());
